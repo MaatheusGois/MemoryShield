@@ -1,0 +1,19 @@
+default_platform :mac
+
+platform :mac do
+  lane :release do
+    increment_build_number(xcodeproj: "MemoryShield.xcodeproj")
+
+    build_app(
+      scheme: "MemoryShield",
+      project: "MemoryShield.xcodeproj",
+      configuration: "Release",
+      skip_codesigning: true,
+      skip_archive: true,
+      output_directory: ".",
+      output_name: "MemoryShield",
+      derived_data_path: "build",
+      xcargs: 'CODE_SIGN_IDENTITY="-" CODE_SIGNING_ALLOWED=NO'
+    )
+  end
+end
