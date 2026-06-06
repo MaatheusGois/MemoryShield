@@ -1,5 +1,8 @@
 # MemoryShield
 
+<img width="1080" height="768" alt="Screenshot 2026-06-05 at 21 02 53" src="https://github.com/user-attachments/assets/fd217e9e-181b-4e35-b9de-675f66c0ce1e" />
+
+
 A lightweight macOS menu-bar utility that watches running processes and reclaims memory before your Mac starts swapping. MemoryShield samples per-process RSS, plots history, and can automatically terminate user apps that stay above a configurable threshold for a sustained duration.
 
 ## Features
